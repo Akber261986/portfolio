@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d31c2254b0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+            <nav>
+                <img src="images/logo1.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi I am <span>Ghulam Akber</span><br> from Pakistan</h1>
+            </div>
+       </div> 
+    </div>
+    <!-- -------- About------------ -->
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="images/akbars-quire.png">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Ghulam Akber, a passionate web developer with experience in TypeScript and currently learning Next.js. I love creating responsive and user-friendly web applications that solve real-world problems. My goal is to constantly improve my skills and stay up-to-date with the latest technologies in the industry.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web/App Develoment</li>
+                            <li><span>TypeScript</span><br>TypeScript/JavaScript Master</li>
+                            <li><span>App Develpoment</span><br>Building Andriod/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>TypeScript</span><br>One Year</li>
+                            <li><span>Wed Design</span><br>Two Years</li>
+                            <li><span>PhotoShop/Video Editing</span><br>Five Years</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Web 3.0</span><br>From Governor House Sindh</li>
+                            <li><span>AI/Metaverse</span><br>From Governor House Sindh</li>
+                            <li><span>MA (Litrature)</span><br>University of Sindh Jamshoro</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ------------------Services------------------ -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div class="service">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p class="short-description">Looking to establish or enhance your presence?<br>Our web development services are designed to create visually stunning, user-friendly websites that captivate and engage audiences. Whether you're a small business seeking an effective e-commerce platform,
+                        <span class="dots">...</span>
+                        <span class="more" style="display: none;">
+                    a start-up in need of an impactful landing page, or an established brand looking to revamp its digital footprint, we've got you covered. <br>Our team of skilled developers will work closely with you to understand your vision and bring it to life through cutting-edge technologies and industry best practices. From responsive design for seamless mobile compatibility to robust backend architecture for optimal performance, we prioritize both aesthetics and functionality. </span>
+                    </p>
+                    <button class="learn-more-btn">Learn More</button>
+                </div>
+                <div class="service">
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Development</h2>
+                    <p class="short-description">Ready to elevate your business with a powerful mobile presence? Our app development services are geared towards creating dynamic and intuitive mobile applications that deliver seamless user experiences. Whether you're looking to expand your 
+                        <span class="dots">...</span>
+                        <span class="more" style="display: none;">
+                    brand's reach, streamline internal operations, or enhance customer engagement, our team is equipped to bring your app vision to life. <br>We specialize in crafting custom iOS and Android apps that embody the essence of your brand while providing users with functionality and value. From sleek UI/UX design to robust backend infrastructure, our developers leverage the latest technologies and coding practices to ensure optimal performance across devices. </span>
+                    </p>
+                    <button class="learn-more-btn">Learn More</button>
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-bug"></i>
+                    <h2>Bug Founder</h2>
+                    
+                    <p class="short-description">Say goodbye to pesky bugs and glitches with our comprehensive bug finding services. Our team of experienced testers and developers are dedicated to identifying, isolating, and resolving any technical issues that may be affecting the performance of your software or application.
+                        <span class="dots">...</span>
+                        <span class="more" style="display: none;">    
+                    <br>
+                    We employ a rigorous testing process that involves thorough analysis of code, user interface, and functionality to uncover any potential bugs or errors. Our goal is to ensure that your product operates smoothly and flawlessly across various platforms and devices. <br>Using industry-leading tools and methodologies, we meticulously document each discovered issue, providing detailed reports that enable our development team to swiftly address and rectify the identified bugs. By partnering with us for your bug finding needs, you can rest assured that your software will deliver a seamless user experience while maintaining optimal performance.</span>
+                    </p>
+                    <button class="learn-more-btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- --------------------------Projects---------------------- -->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/countdown.png">
+                    <div class="layer">
+                        <h3>Simple Calculator</h3>
+                        <p>This is a CLI base simple calculator made in TypeScript using Inquirer chalk modules</p>
+                        <a href="https://github.com/Akber261986/my_simple_calc_3.git">Source Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Todo list.png">
+                    <div class="layer">
+                        <h3>Simple Calculator</h3>
+                        <p>This is a CLI base simple calculator made in TypeScript using Inquirer chalk modules</p>
+                        <a href="https://github.com/Akber261986/my_simple_calc_3.git">Source Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/calc.png">
+                    <div class="layer">
+                        <h3>Simple Calculator</h3>
+                        <p>This is a CLI base simple calculator made in TypeScript using Inquirer chalk modules</p>
+                        <a href="https://github.com/Akber261986/my_simple_calc_3.git">Source Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+               </div>
+            </div>
+<!-- =============================== Additional Project ===================================== -->
+                        <div class="additional-projects ap-align" >
+                            <div class="additional-work">
+                                <img src="images/number guessing game.png">
+                                <div class="layer aditional-layer">
+                                    <h3>Number Guessing Game</h3>
+                                    <p>This is a CLI base simple calculator made in TypeScript using Inquirer chalk modules</p>
+                                    <a href="https://github.com/Akber261986/my_simple_calc_3.git">Source Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="additional-work">
+                                <img src="images/atm.png">
+                                <div class="layer aditional-layer">
+                                    <h3>ATM Machine</h3>
+                                    <p>This is a CLI base ATM-Machine made in TypeScript using Inquirer chalk modules</p>
+                                    <a href="https://github.com/Akber261986/akber_atm_26.git">Source Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="additional-work">
+                                <img src="images/adventure game.png">
+                                <div class="layer aditional-layer">
+                                    <h3>Adventure Game</h3>
+                                    <p>This is a CLI base Adventure Game made in TypeScript using Inquirer chalk modules</p>
+                                    <a href="https://github.com/Akber261986/07_Text_Based_Asventure_Game.git">Source Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="additional-work">
+                                <img src="images/bank MS.png">
+                                <div class="layer aditional-layer">
+                                    <h3>Bank Management System</h3>
+                                    <p>This is a CLI base Adventure Game made in TypeScript using Inquirer chalk modules</p>
+                                    <a href="https://github.com/Akber261986/07_Text_Based_Asventure_Game.git">Source Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="additional-work">
+                                <img src="images/Currency converter.png">
+                                <div class="layer aditional-layer">
+                                    <h3>Currency Converter</h3>
+                                    <p>This is a CLI base Adventure Game made in TypeScript using Inquirer chalk modules</p>
+                                    <a href="https://github.com/Akber261986/07_Text_Based_Asventure_Game.git">Source Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <div class="additional-work">
+                                <img src="images/Student MS.png">
+                                <div class="layer aditional-layer">
+                                    <h3>Student Management System</h3>
+                                    <p>This is a CLI base Adventure Game made in TypeScript using Inquirer chalk modules</p>
+                                    <a href="https://github.com/Akber261986/07_Text_Based_Asventure_Game.git">Source Code <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                        </div>
+            
+            <button id="seeMoreBtn" class="btn">See More</button>
+            <button id="showLessBtn" class="btn" style="display: none;">Show Less</button>
+        </div>
+    </div>
+
+<!-- --------------------------Contact-------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-tital">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> akbarghulam47@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 03213011912</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/ghulam.dal?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/ghulam-akber-8221052bb"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/dalakber"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/Akber261986"><i class="fab fa-github"></i></a>
+                        <a href="https://wa.me/+923213011912"><i class="fa-brands fa-square-whatsapp"></i></a>
+                    </div>
+                    <a href="Ghulam-Akber-CV.pdf" download class="btn btn2"><i class="fa-solid fa-download"></i> Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your E-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; Ghulam Akber. <i class="fas fa-heart"></i> All rights reserved. </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
